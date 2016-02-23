@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "RechangeViewController.h"
+#import "SVProgressHUD.h"
+#import "HomeViewController.h"
+
 
 @interface ViewController ()
 
@@ -16,12 +20,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+    
+   }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
+
+- (IBAction)loginAction:(id)sender {
+    [SVProgressHUD showSuccessWithStatus:@"登录成功"];
+    HomeViewController *home = [[HomeViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:home];
+
+    [[UIApplication sharedApplication].delegate window].rootViewController = nav;
+
+}
+
+- (IBAction)forgetPasswordAction:(id)sender {
+
+}
+
+
 
 @end
