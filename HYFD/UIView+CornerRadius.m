@@ -15,8 +15,7 @@ IBInspectable
     self.layer.masksToBounds = cornerRadius > 0;
 }
 
-- (CGFloat)cornerRadius
-{
-    return self.layer.cornerRadius;
-}
+
+
+
 @end

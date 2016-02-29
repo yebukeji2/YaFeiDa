@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F73A923F1C77F8ED004D8F6C /* MLTableAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F73A923E1C77F8ED004D8F6C /* MLTableAlert.m */; };
-		F73A92511C78052F004D8F6C /* AppIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F73A92501C78052F004D8F6C /* AppIcon.jpg */; };
 		F76707641C756E520024B5E0 /* navigation_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F76707611C756E520024B5E0 /* navigation_icon.png */; };
 		F76707651C756E520024B5E0 /* navigation_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F76707621C756E520024B5E0 /* navigation_icon@2x.png */; };
 		F76707661C756E520024B5E0 /* navigation_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F76707631C756E520024B5E0 /* navigation_icon@3x.png */; };
@@ -63,7 +62,6 @@
 /* Begin PBXFileReference section */
 		F73A923D1C77F8ED004D8F6C /* MLTableAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLTableAlert.h; sourceTree = "<group>"; };
 		F73A923E1C77F8ED004D8F6C /* MLTableAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLTableAlert.m; sourceTree = "<group>"; };
-		F73A92501C78052F004D8F6C /* AppIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AppIcon.jpg; sourceTree = "<group>"; };
 		F76707611C756E520024B5E0 /* navigation_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigation_icon.png; sourceTree = "<group>"; };
 		F76707621C756E520024B5E0 /* navigation_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_icon@2x.png"; sourceTree = "<group>"; };
 		F76707631C756E520024B5E0 /* navigation_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_icon@3x.png"; sourceTree = "<group>"; };
@@ -182,7 +180,8 @@
 		F7C36F361C6398F5003C26C1 /* HYFD */ = {
 			isa = PBXGroup;
 			children = (
-				F73A92501C78052F004D8F6C /* AppIcon.jpg */,
+				F7C36F401C6398F5003C26C1 /* Main.storyboard */,
+				F7C36F461C6398F5003C26C1 /* Assets.xcassets */,
 				F7F30D811C72C60A00248CF7 /* common */,
 				F7C36F3A1C6398F5003C26C1 /* AppDelegate.h */,
 				F7C36F3B1C6398F5003C26C1 /* AppDelegate.m */,
@@ -210,8 +209,6 @@
 				F7C36F7A1C639F06003C26C1 /* HttpInstance.m */,
 				F7C36F7C1C63A070003C26C1 /* QuotaOrderModel.h */,
 				F7C36F7D1C63A070003C26C1 /* QuotaOrderModel.m */,
-				F7C36F401C6398F5003C26C1 /* Main.storyboard */,
-				F7C36F461C6398F5003C26C1 /* Assets.xcassets */,
 				F7C36F481C6398F5003C26C1 /* LaunchScreen.storyboard */,
 				F7C36F4B1C6398F5003C26C1 /* Info.plist */,
 				F7C36F431C6398F5003C26C1 /* HYFD.xcdatamodeld */,
@@ -365,7 +362,6 @@
 				F7F30D7B1C72BE3700248CF7 /* RechargeCollectionViewCell.xib in Resources */,
 				F76707651C756E520024B5E0 /* navigation_icon@2x.png in Resources */,
 				F7C36F421C6398F5003C26C1 /* Main.storyboard in Resources */,
-				F73A92511C78052F004D8F6C /* AppIcon.jpg in Resources */,
 				F7F30D801C72C24100248CF7 /* RechangeViewController.xib in Resources */,
 				F7B92B021C76F89200863B1B /* ActivateCardViewController.xib in Resources */,
 				F7823CD71C748913005F3ECE /* dataRechangeVC.xib in Resources */,
