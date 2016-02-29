@@ -15,9 +15,8 @@
 @interface ActivateCardViewController ()
 @property(nonatomic,strong)TableViewWithBlock *mTableV_name;
 @property(nonatomic,strong)MLTableAlert *alert;
-@property(nonatomic,assign)BOOL isOpen;
 @end
-
+IBInspectable
 @implementation ActivateCardViewController
 
 - (void)viewDidLoad {

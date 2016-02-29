@@ -12,9 +12,8 @@
 #import "ViewController.h"
 
 @interface HomeViewController ()
-
+@property(nonatomic,strong) NSString *test;
 @end
-
 @implementation HomeViewController
 
 - (void)viewDidLoad {

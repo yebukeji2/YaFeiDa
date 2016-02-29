@@ -12,5 +12,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *operatorsBtn;
 - (IBAction)operatorsBtnAction:(id)sender;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollview;
+@property(nonatomic,assign)IBInspectable BOOL isOpen;
+@property(nonatomic,strong)IBInspectable NSString *testStr;
+@property(nonatomic,strong)IBInspectable UIImage *img;
+
 
 @end

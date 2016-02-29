@@ -20,6 +20,7 @@
 		F7B92B0A1C7704F600863B1B /* SelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7B92B081C7704F600863B1B /* SelectionCell.xib */; };
 		F7B92B0F1C770B1400863B1B /* UITableView+DataSourceBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B92B0C1C770B1400863B1B /* UITableView+DataSourceBlocks.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F7B92B101C770B1400863B1B /* UITableView+DelegateBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B92B0E1C770B1400863B1B /* UITableView+DelegateBlocks.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F7BBC53E1C7F2ED300ED0734 /* UIView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BBC53D1C7F2ED300ED0734 /* UIView+CornerRadius.m */; };
 		F7C36F391C6398F5003C26C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C36F381C6398F5003C26C1 /* main.m */; };
 		F7C36F3C1C6398F5003C26C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C36F3B1C6398F5003C26C1 /* AppDelegate.m */; };
 		F7C36F3F1C6398F5003C26C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C36F3E1C6398F5003C26C1 /* ViewController.m */; };
@@ -79,6 +80,8 @@
 		F7B92B0C1C770B1400863B1B /* UITableView+DataSourceBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DataSourceBlocks.m"; sourceTree = "<group>"; };
 		F7B92B0D1C770B1400863B1B /* UITableView+DelegateBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+DelegateBlocks.h"; sourceTree = "<group>"; };
 		F7B92B0E1C770B1400863B1B /* UITableView+DelegateBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DelegateBlocks.m"; sourceTree = "<group>"; };
+		F7BBC53C1C7F2ED300ED0734 /* UIView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerRadius.h"; sourceTree = "<group>"; };
+		F7BBC53D1C7F2ED300ED0734 /* UIView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerRadius.m"; sourceTree = "<group>"; };
 		F7C36F341C6398F5003C26C1 /* HYFD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYFD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C36F381C6398F5003C26C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F7C36F3A1C6398F5003C26C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 				F7B92B081C7704F600863B1B /* SelectionCell.xib */,
 				F7F30D7C1C72C24100248CF7 /* RechangeViewController.h */,
 				F7F30D7D1C72C24100248CF7 /* RechangeViewController.m */,
+				F7BBC53C1C7F2ED300ED0734 /* UIView+CornerRadius.h */,
+				F7BBC53D1C7F2ED300ED0734 /* UIView+CornerRadius.m */,
 				F7F30D7E1C72C24100248CF7 /* RechangeViewController.xib */,
 				F7823CD61C748913005F3ECE /* dataRechangeVC.xib */,
 				F7F30D771C72BE3700248CF7 /* RechargeCollectionViewCell.h */,
@@ -400,6 +405,7 @@
 				F7C36F661C639CD1003C26C1 /* AFHTTPSessionManager.m in Sources */,
 				F7B92B091C7704F600863B1B /* SelectionCell.m in Sources */,
 				F7F30D891C72CFF100248CF7 /* SVProgressHUD.m in Sources */,
+				F7BBC53E1C7F2ED300ED0734 /* UIView+CornerRadius.m in Sources */,
 				F7DADBEB1C6F6654001F84ED /* INBRSA.m in Sources */,
 				F7C36F751C639D84003C26C1 /* Reachability.m in Sources */,
 				F7F30D7A1C72BE3700248CF7 /* RechargeCollectionViewCell.m in Sources */,
