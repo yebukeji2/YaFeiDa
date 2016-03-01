@@ -10,17 +10,26 @@
 #import "RechangeViewController.h"
 #import "SVProgressHUD.h"
 #import "HomeViewController.h"
+#import "IQKeyboardManager.h"
 
 
 @interface ViewController ()
 @property(nonatomic,strong)UIButton *rightBtn;
 @property(nonatomic,strong)UIButton *rightBtn2;
+@property(nonatomic,strong)UIView *rightView2;
 
 @end
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //输入框弹出键盘问题
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;//控制整个功能是否启用
+    manager.shouldResignOnTouchOutside = YES;//控制点击背景是否收起键盘
+    manager.shouldToolbarUsesTextFieldTintColor = YES;//控制键盘上的工具条文字颜色是否用户自定义
+    manager.enableAutoToolbar = YES;//控制是否显示键盘上的工具条
+    //添加导航条
     UIColor *color = [UIColor whiteColor];
     self.userTF.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"   请输入用户名" attributes:@{NSForegroundColorAttributeName: color}];
     self.passwordTF.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"   请输入密码" attributes:@{NSForegroundColorAttributeName: color}];
@@ -37,9 +46,12 @@
     [self.rightBtn2 setTitle:@"获取验证码" forState:UIControlStateNormal];
     [self.rightBtn2 setTitle:@"已发送" forState:UIControlStateSelected];
     [self.rightBtn2 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.rightBtn2.titleLabel.font = [UIFont systemFontOfSize:12];
     [self.rightBtn2 setBackgroundColor:[UIColor lightGrayColor]];
     [self.rightBtn2 addTarget:self action:@selector(rightViewAction2:) forControlEvents:UIControlEventTouchUpInside];
-    self.rightBtn2.frame = CGRectMake(0, 0, 100, 32);
+    self.rightBtn2.frame = CGRectMake(5, 5, 65, 20);
+    self.rightView2 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 80, 30)];
+    [self.rightView2 addSubview:self.rightBtn2];
 
 
     
@@ -92,13 +104,18 @@
         self.userTF.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"   请输入手机号" attributes:@{NSForegroundColorAttributeName: color}];
         self.passwordTF.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"   请输入验证码" attributes:@{NSForegroundColorAttributeName: color}];
 
-        //你把tapAction：实现以下，点击，只会触发这个方法。
-        self.passwordTF.rightView = self.rightBtn2;
+        self.passwordTF.rightView = self.rightView2;
     }
 }
 -(void)rightViewAction:(id)sender{
     UIButton *btn = sender;
     btn.selected = !btn.selected;
+    if(btn.selected == YES){
+        self.passwordTF.secureTextEntry = NO;
+    } else{
+        self.passwordTF.secureTextEntry = YES;
+        
+    }
     
 }
 -(void)rightViewAction2:(id)sender{
