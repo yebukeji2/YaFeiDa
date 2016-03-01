@@ -14,6 +14,14 @@ IBInspectable
     self.layer.cornerRadius = cornerRadius;
     self.layer.masksToBounds = cornerRadius > 0;
 }
+- (void)setBorderWidth:(CGFloat)borderWidth
+{
+    self.layer.borderWidth = borderWidth;
+}
+- (void)setBorderColor:(UIColor*)borderColor
+{
+    self.layer.borderColor = borderColor.CGColor;
+}
 
 
 

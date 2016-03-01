@@ -14,6 +14,9 @@
 - (IBAction)loginAction:(id)sender;
 - (IBAction)forgetPasswordAction:(id)sender;
 
+- (IBAction)loginBtnAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *firstLine;
+@property (weak, nonatomic) IBOutlet UIView *secondLine;
 
 @end
 
