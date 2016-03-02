@@ -10,6 +10,7 @@
 #import "RechangeViewController.h"
 #import "ActivateCardViewController.h"
 #import "ViewController.h"
+#import "IndividualCenterViewController.h"
 
 @interface HomeViewController ()
 @property(nonatomic,strong) NSString *test;
@@ -20,7 +21,7 @@
     [super viewDidLoad];
 //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"navigation_icon"] style:UIBarButtonItemStyleDone target:self action:@selector(leftItemAction:)];
 //
-//    self.navigationItem.title = @"亚飞达";
+    self.navigationItem.title = @"亚飞达";
     self.navigationController.navigationBarHidden = YES;
 
 
@@ -57,12 +58,18 @@
         [self.navigationController pushViewController:vc animated:YES];
         
     }
-    else if (btn.tag == 3){
+    else if (btn.tag == 4){
         RechangeViewController *vc = [[RechangeViewController alloc]initWithNibName:@"dataRechangeVC" bundle:nil];
         vc.navigationItem.title = @"流量充值";
         [self.navigationController pushViewController:vc animated:YES];
         
     }
+    else if (btn.tag == 7){
+         IndividualCenterViewController*vc = [[IndividualCenterViewController alloc]initWithNibName:@"IndividualCenterViewController" bundle:nil];
+        vc.navigationItem.title = @"个人中心";
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+
     
 }
 @end

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
@@ -136,7 +136,7 @@
                         <action selector="AllBtnAction:" destination="-1" eventType="touchUpInside" id="KIj-KP-02y"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsh-Dh-BBy">
+                <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsh-Dh-BBy">
                     <rect key="frame" x="250" y="456" width="120" height="65"/>
                     <color key="backgroundColor" red="0.29411764705882354" green="0.44705882352941173" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="邀请好友" image="add_icon"/>
@@ -155,7 +155,7 @@
                         <action selector="AllBtnAction:" destination="-1" eventType="touchUpInside" id="OSs-oM-WJi"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cI7-jw-FZW">
+                <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cI7-jw-FZW">
                     <rect key="frame" x="250" y="526" width="120" height="65"/>
                     <color key="backgroundColor" red="0.38823529411764707" green="0.34901960784313724" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="更多"/>
@@ -174,7 +174,7 @@
                         <action selector="AllBtnAction:" destination="-1" eventType="touchUpInside" id="LDW-E6-rua"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djZ-iV-NL7">
+                <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djZ-iV-NL7">
                     <rect key="frame" x="130" y="526" width="115" height="65"/>
                     <color key="backgroundColor" red="0.13725490196078433" green="0.52549019607843139" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="个人中心" image="user_icon"/>
