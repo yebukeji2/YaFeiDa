@@ -13,8 +13,7 @@
 - (IBAction)operatorsBtnAction:(id)sender;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollview;
 @property(nonatomic,assign)IBInspectable BOOL isOpen;
-@property(nonatomic,strong)IBInspectable NSString *testStr;
-@property(nonatomic,strong)IBInspectable UIImage *img;
 
+@property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *allTF;
 
 @end

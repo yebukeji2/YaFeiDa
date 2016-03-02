@@ -120,6 +120,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="firstLine" destination="jzK-q2-NP5" id="3s5-SA-LBJ"/>
+                        <outlet property="loginBtn" destination="V2e-J8-pm7" id="qLN-ne-7TO"/>
                         <outlet property="passwordTF" destination="AYy-8H-z6W" id="7o5-Pv-T4J"/>
                         <outlet property="secondLine" destination="bL3-r3-Xbo" id="NMn-yl-GbW"/>
                         <outlet property="userTF" destination="db6-ta-3iV" id="SAb-JL-afx"/>

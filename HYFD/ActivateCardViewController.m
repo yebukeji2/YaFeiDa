@@ -21,9 +21,12 @@ IBInspectable
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //[self setUp];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"navigation_icon"] style:UIBarButtonItemStyleDone target:self action:@selector(leftItemAction:)];
 
 
+}
+-(void)leftItemAction:(id)sender{
+    
 }
 -(void)setUp{
     __weak ActivateCardViewController *weakSelf = self;

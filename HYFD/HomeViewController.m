@@ -51,16 +51,28 @@
     if(btn.tag==0){
         ActivateCardViewController *detail = [[ActivateCardViewController alloc]init];
         [self.navigationController pushViewController:detail animated:YES];
+        detail.navigationItem.title = @"普号开卡";
+
         
-    }else if(btn.tag==2){
+    }
+    else if (btn.tag==1){
+        ActivateCardViewController *detail = [[ActivateCardViewController alloc]init];
+        [self.navigationController pushViewController:detail animated:YES];
+        detail.navigationItem.title = @"靓号开卡";
+        
+        
+    }
+    else if(btn.tag==2){
         RechangeViewController *vc = [[RechangeViewController alloc]initWithNibName:@"RechangeViewController" bundle:nil];
-        vc.navigationItem.title = @"话费充值";
+        vc.Flag = 0;
+        //vc.navigationItem.titleView = self.seg;
         [self.navigationController pushViewController:vc animated:YES];
         
     }
     else if (btn.tag == 4){
         RechangeViewController *vc = [[RechangeViewController alloc]initWithNibName:@"dataRechangeVC" bundle:nil];
-        vc.navigationItem.title = @"流量充值";
+        vc.Flag = 1;
+        //vc.navigationItem.titleView = self.SecSeg;
         [self.navigationController pushViewController:vc animated:YES];
         
     }
@@ -72,4 +84,6 @@
 
     
 }
+
+
 @end

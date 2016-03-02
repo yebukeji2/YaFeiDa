@@ -17,6 +17,7 @@
 - (IBAction)loginBtnAction:(id)sender;
 @property (weak, nonatomic) IBOutlet UIView *firstLine;
 @property (weak, nonatomic) IBOutlet UIView *secondLine;
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 
 @end
 

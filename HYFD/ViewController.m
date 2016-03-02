@@ -95,6 +95,7 @@
         self.passwordTF.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"   请输入密码" attributes:@{NSForegroundColorAttributeName: color}];
 
         self.passwordTF.rightView = self.rightBtn;
+        [self.loginBtn setTitle:@"登录" forState:UIControlStateNormal];
 
     }
     else{
@@ -105,6 +106,8 @@
         self.passwordTF.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"   请输入验证码" attributes:@{NSForegroundColorAttributeName: color}];
 
         self.passwordTF.rightView = self.rightView2;
+        [self.loginBtn setTitle:@"注册" forState:UIControlStateNormal];
+
     }
 }
 -(void)rightViewAction:(id)sender{

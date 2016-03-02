@@ -29,16 +29,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    if(self.Flag == 0){
+        self.navigationItem.titleView = self.seg;
+    }else{
+        self.navigationItem.titleView = self.SecSeg;
+
+    }
     self.numArr = [NSArray arrayWithObjects:@"10",@"20",@"30",@"50",@"100",@"200",@"300",@"500", nil];
     [self.collectionView registerNib:[UINib nibWithNibName:@"RechargeCollectionViewCell" bundle:nil]forCellWithReuseIdentifier:@"RechargeCollectionViewCell"];
     // Do any additional setup after loading the view from its nib.
 }
+
+- (IBAction)segAction:(id)sender {
+    UISegmentedControl *seg = sender;
+    if(seg.selectedSegmentIndex == 0){
+        
+    }else{
+        
+    }
+}
+- (IBAction)SecSegAction:(id)sender {
+    UISegmentedControl *seg = sender;
+    if(seg.selectedSegmentIndex == 0){
+        
+    }else{
+        
+    }
+}
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
     QuotaOrderModel *model = [[QuotaOrderModel alloc]init];
-    
-    
     model.terminalName = @"jnrt01";
     model.customerOrderId = @"20151216165649031185230583635634";
     model.phoneNo = self.phoneNoTF.text;

@@ -69,6 +69,7 @@
 		F7F1281E1C86914B007D36A4 /* cellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F1281D1C86914B007D36A4 /* cellModel.m */; };
 		F7F128271C869B68007D36A4 /* IndivualCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F128251C869B68007D36A4 /* IndivualCenterCell.m */; };
 		F7F128281C869B68007D36A4 /* IndivualCenterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F128261C869B68007D36A4 /* IndivualCenterCell.xib */; };
+		F7F1282A1C86D047007D36A4 /* RechargeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F128291C86D047007D36A4 /* RechargeVC.xib */; };
 		F7F30D7A1C72BE3700248CF7 /* RechargeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F30D781C72BE3700248CF7 /* RechargeCollectionViewCell.m */; };
 		F7F30D7B1C72BE3700248CF7 /* RechargeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F30D791C72BE3700248CF7 /* RechargeCollectionViewCell.xib */; };
 		F7F30D7F1C72C24100248CF7 /* RechangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F30D7D1C72C24100248CF7 /* RechangeViewController.m */; };
@@ -193,6 +194,7 @@
 		F7F128241C869B68007D36A4 /* IndivualCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndivualCenterCell.h; sourceTree = "<group>"; };
 		F7F128251C869B68007D36A4 /* IndivualCenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndivualCenterCell.m; sourceTree = "<group>"; };
 		F7F128261C869B68007D36A4 /* IndivualCenterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndivualCenterCell.xib; sourceTree = "<group>"; };
+		F7F128291C86D047007D36A4 /* RechargeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RechargeVC.xib; sourceTree = "<group>"; };
 		F7F30D771C72BE3700248CF7 /* RechargeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeCollectionViewCell.h; sourceTree = "<group>"; };
 		F7F30D781C72BE3700248CF7 /* RechargeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeCollectionViewCell.m; sourceTree = "<group>"; };
 		F7F30D791C72BE3700248CF7 /* RechargeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RechargeCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 				F7F30D7C1C72C24100248CF7 /* RechangeViewController.h */,
 				F7F30D7D1C72C24100248CF7 /* RechangeViewController.m */,
 				F7F30D7E1C72C24100248CF7 /* RechangeViewController.xib */,
+				F7F128291C86D047007D36A4 /* RechargeVC.xib */,
 				F7823CD61C748913005F3ECE /* dataRechangeVC.xib */,
 				F7F30D771C72BE3700248CF7 /* RechargeCollectionViewCell.h */,
 				F7F30D781C72BE3700248CF7 /* RechargeCollectionViewCell.m */,
@@ -511,6 +514,7 @@
 				F7F128281C869B68007D36A4 /* IndivualCenterCell.xib in Resources */,
 				F7BBC5E91C85C02E00ED0734 /* IQKeyboardManager.bundle in Resources */,
 				F7C36F471C6398F5003C26C1 /* Assets.xcassets in Resources */,
+				F7F1282A1C86D047007D36A4 /* RechargeVC.xib in Resources */,
 				F76707641C756E520024B5E0 /* navigation_icon.png in Resources */,
 				F7F30D7B1C72BE3700248CF7 /* RechargeCollectionViewCell.xib in Resources */,
 				F76707651C756E520024B5E0 /* navigation_icon@2x.png in Resources */,
