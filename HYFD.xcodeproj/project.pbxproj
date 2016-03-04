@@ -75,7 +75,6 @@
 		F7C36F7B1C639F06003C26C1 /* HttpInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C36F7A1C639F06003C26C1 /* HttpInstance.m */; };
 		F7C36F7E1C63A070003C26C1 /* QuotaOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C36F7D1C63A070003C26C1 /* QuotaOrderModel.m */; };
 		F7C36F811C63B0FD003C26C1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C36F801C63B0FD003C26C1 /* Security.framework */; };
-		F7D7131E1C87D45700EE1D2A /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D7131D1C87D45700EE1D2A /* BaiduMapAPI.framework */; };
 		F7DADBB91C6F6438001F84ED /* Security.framework in Sources */ = {isa = PBXBuildFile; fileRef = F7C36F801C63B0FD003C26C1 /* Security.framework */; };
 		F7DADBEA1C6F6654001F84ED /* INBAES.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DADBDF1C6F6654001F84ED /* INBAES.m */; };
 		F7DADBEB1C6F6654001F84ED /* INBRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DADBE21C6F6654001F84ED /* INBRSA.m */; };
@@ -220,7 +219,6 @@
 		F7C36F7C1C63A070003C26C1 /* QuotaOrderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuotaOrderModel.h; sourceTree = "<group>"; };
 		F7C36F7D1C63A070003C26C1 /* QuotaOrderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuotaOrderModel.m; sourceTree = "<group>"; };
 		F7C36F801C63B0FD003C26C1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		F7D7131D1C87D45700EE1D2A /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
 		F7DADBDE1C6F6654001F84ED /* INBAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INBAES.h; sourceTree = "<group>"; };
 		F7DADBDF1C6F6654001F84ED /* INBAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INBAES.m; sourceTree = "<group>"; };
 		F7DADBE01C6F6654001F84ED /* INBMacroAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INBMacroAdditions.h; sourceTree = "<group>"; };
@@ -263,7 +261,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7D7131E1C87D45700EE1D2A /* BaiduMapAPI.framework in Frameworks */,
 				F7C36F811C63B0FD003C26C1 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,7 +476,6 @@
 		F7F30D811C72C60A00248CF7 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				F7D7131D1C87D45700EE1D2A /* BaiduMapAPI.framework */,
 				F7BBC53C1C7F2ED300ED0734 /* UIView+CornerRadius.h */,
 				F7BBC53D1C7F2ED300ED0734 /* UIView+CornerRadius.m */,
 				F7BBC5B71C85C02E00ED0734 /* IQKeyBoardManager */,

@@ -12,6 +12,7 @@
 @interface MoreRechangeCell : UITableViewCell
 
 @property (weak,nonatomic) id<addDeleteDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UIButton *addDeleteBtn;
 
 - (IBAction)addDeleteACtion:(id)sender;
 

@@ -44,16 +44,31 @@
             //加判断看是否成功实例化该cell，成功的话赋给cell用来返回。
         }
     }
-    if(self.datasource.count == 0){
-        [self.datasource addObject:cell];
+    if(indexPath.row == self.cellNum-1){
+        [cell.addDeleteBtn setImage:[UIImage imageNamed:@"close_eye"] forState:UIControlStateNormal];
+
     }
+    else{
+        [cell.addDeleteBtn setImage:[UIImage imageNamed:@"open_eye"] forState:UIControlStateNormal];
+    }
+//    if(self.datasource.count == 0){
+//        [self.datasource addObject:cell];
+//    }
     cell.tag = indexPath.row;
     cell.delegate = self;
 
     return cell;
 }
 -(void)ClickBtnWith:(UIButton *)btn cell:(MoreRechangeCell *) cell{
-    self.cellNum++;
+    if(cell.tag == self.cellNum-1){
+        self.cellNum++;
+
+    }else{
+        self.cellNum--;
+        NSIndexPath *index = [NSIndexPath indexPathForRow:cell.tag inSection:0];
+        [self.tableview deleteRowsAtIndexPaths:[NSArray arrayWithObject:index] withRowAnimation:UITableViewRowAnimationLeft];
+    }
+    
     [self.tableview reloadData];
     [self updateViewConstraints];
     
