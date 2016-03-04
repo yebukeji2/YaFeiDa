@@ -23,6 +23,12 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <constraints>
+                <constraint firstItem="r42-cd-lcl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8pP-VT-p0w"/>
+                <constraint firstItem="r42-cd-lcl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HU4-fr-8Ul"/>
+                <constraint firstAttribute="trailing" secondItem="r42-cd-lcl" secondAttribute="trailing" id="NSf-Bm-ELj"/>
+                <constraint firstAttribute="bottom" secondItem="r42-cd-lcl" secondAttribute="bottom" id="qnf-b8-2ND"/>
+            </constraints>
             <size key="customSize" width="51" height="24"/>
             <connections>
                 <outlet property="numLabel" destination="r42-cd-lcl" id="PMA-CJ-9ca"/>

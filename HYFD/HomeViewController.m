@@ -11,6 +11,10 @@
 #import "ActivateCardViewController.h"
 #import "ViewController.h"
 #import "IndividualCenterViewController.h"
+#import "QueryViewController.h"
+#import "MyViewController.h"
+#import "InviteViewController.h"
+#import "RechangeParentViewController.h"
 
 @interface HomeViewController ()
 @property(nonatomic,strong) NSString *test;
@@ -63,8 +67,8 @@
         
     }
     else if(btn.tag==2){
-        RechangeViewController *vc = [[RechangeViewController alloc]initWithNibName:@"RechangeViewController" bundle:nil];
-        vc.Flag = 0;
+        RechangeParentViewController *vc = [[RechangeParentViewController alloc]initWithNibName:@"RechangeParentViewController" bundle:nil];
+        //vc.Flag = 0;
         //vc.navigationItem.titleView = self.seg;
         [self.navigationController pushViewController:vc animated:YES];
         
@@ -76,6 +80,15 @@
         [self.navigationController pushViewController:vc animated:YES];
         
     }
+    else if (btn.tag == 5){
+        QueryViewController*vc = [[QueryViewController alloc]initWithNibName:@"QueryViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if (btn.tag == 6){
+        InviteViewController*vc = [[InviteViewController alloc]initWithNibName:@"InviteViewController" bundle:nil];
+        vc.navigationItem.title = @"邀请";
+        [self.navigationController pushViewController:vc animated:YES];
+    }
     else if (btn.tag == 7){
          IndividualCenterViewController*vc = [[IndividualCenterViewController alloc]initWithNibName:@"IndividualCenterViewController" bundle:nil];
         vc.navigationItem.title = @"个人中心";
@@ -83,6 +96,12 @@
     }
 
     
+}
+
+- (IBAction)myBtnAction:(id)sender {
+    MyViewController *detail = [[MyViewController alloc]init];
+    detail.navigationItem.title = @"我的";
+    [self.navigationController pushViewController:detail animated:YES];
 }
 
 

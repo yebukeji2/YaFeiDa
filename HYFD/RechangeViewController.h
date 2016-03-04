@@ -15,7 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *actualPriceLabel;
 - (IBAction)RechangeBtnaction:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNoTF;
-@property (strong, nonatomic) IBOutlet UIView *secView;
 @property(nonatomic,assign)BOOL Flag;
 
 - (IBAction)segAction:(id)sender;

@@ -11,5 +11,6 @@
 @interface HomeViewController : UIViewController
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *DetailBtnAction;
 - (IBAction)AllBtnAction:(id)sender;
+- (IBAction)myBtnAction:(id)sender;
 
 @end
