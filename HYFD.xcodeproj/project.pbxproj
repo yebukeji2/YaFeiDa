@@ -27,6 +27,7 @@
 		F721A8FC1C8979DC0082D77C /* MoreRechangeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F721A8FA1C8979DC0082D77C /* MoreRechangeCell.m */; };
 		F721A8FD1C8979DC0082D77C /* MoreRechangeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F721A8FB1C8979DC0082D77C /* MoreRechangeCell.xib */; };
 		F73A923F1C77F8ED004D8F6C /* MLTableAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F73A923E1C77F8ED004D8F6C /* MLTableAlert.m */; };
+		F74427811C8A72E600704ED9 /* MoreDataVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F74427801C8A72E600704ED9 /* MoreDataVC.xib */; };
 		F76707641C756E520024B5E0 /* navigation_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F76707611C756E520024B5E0 /* navigation_icon.png */; };
 		F76707651C756E520024B5E0 /* navigation_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F76707621C756E520024B5E0 /* navigation_icon@2x.png */; };
 		F76707661C756E520024B5E0 /* navigation_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F76707631C756E520024B5E0 /* navigation_icon@3x.png */; };
@@ -130,6 +131,7 @@
 		F721A8FB1C8979DC0082D77C /* MoreRechangeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreRechangeCell.xib; sourceTree = "<group>"; };
 		F73A923D1C77F8ED004D8F6C /* MLTableAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLTableAlert.h; sourceTree = "<group>"; };
 		F73A923E1C77F8ED004D8F6C /* MLTableAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLTableAlert.m; sourceTree = "<group>"; };
+		F74427801C8A72E600704ED9 /* MoreDataVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreDataVC.xib; sourceTree = "<group>"; };
 		F76707611C756E520024B5E0 /* navigation_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigation_icon.png; sourceTree = "<group>"; };
 		F76707621C756E520024B5E0 /* navigation_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_icon@2x.png"; sourceTree = "<group>"; };
 		F76707631C756E520024B5E0 /* navigation_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_icon@3x.png"; sourceTree = "<group>"; };
@@ -410,6 +412,7 @@
 				F721A8EF1C8970530082D77C /* MoreRechangeViewController.h */,
 				F721A8F01C8970530082D77C /* MoreRechangeViewController.m */,
 				F721A8F11C8970530082D77C /* MoreRechangeViewController.xib */,
+				F74427801C8A72E600704ED9 /* MoreDataVC.xib */,
 				F721A8F91C8979DC0082D77C /* MoreRechangeCell.h */,
 				F721A8FA1C8979DC0082D77C /* MoreRechangeCell.m */,
 				F721A8FB1C8979DC0082D77C /* MoreRechangeCell.xib */,
@@ -599,6 +602,7 @@
 				F7F1282A1C86D047007D36A4 /* RechargeVC.xib in Resources */,
 				F76707641C756E520024B5E0 /* navigation_icon.png in Resources */,
 				F7F30D7B1C72BE3700248CF7 /* RechargeCollectionViewCell.xib in Resources */,
+				F74427811C8A72E600704ED9 /* MoreDataVC.xib in Resources */,
 				F76707651C756E520024B5E0 /* navigation_icon@2x.png in Resources */,
 				F721A8DF1C896A640082D77C /* MyViewController.xib in Resources */,
 				F7C36F421C6398F5003C26C1 /* Main.storyboard in Resources */,
