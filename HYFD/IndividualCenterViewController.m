@@ -9,6 +9,11 @@
 #import "IndividualCenterViewController.h"
 #import "IndivualCenterCell.h"
 #import "cellModel.h"
+#import "FeedBackViewController.h"
+#import "QuestionViewController.h"
+#import "SettingViewController.h"
+#import "RechangeParentViewController.h"
+#import "MyViewController.h"
 @interface IndividualCenterViewController ()
 @property(nonatomic,strong)NSMutableArray *datasource;
 
@@ -55,6 +60,32 @@
     [cell setCellData:model];
         return cell;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    switch (indexPath.row) {
+        case 0:
+        {
+            SettingViewController *detail = [[SettingViewController alloc]init];
+            [self.navigationController pushViewController:detail animated:YES];
+        }
+            break;
+        case 1:
+        {
+            FeedBackViewController *detail = [[FeedBackViewController alloc]init];
+            [self.navigationController pushViewController:detail animated:YES];
+        }
+            break;
+        case 2:
+        {
+            QuestionViewController *detail = [[QuestionViewController alloc]init];
+            [self.navigationController pushViewController:detail animated:YES];
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -70,4 +101,13 @@
 }
 */
 
+- (IBAction)checkAction:(id)sender {
+    MyViewController *detail = [[MyViewController alloc]init];
+    [self.navigationController pushViewController:detail animated:YES];
+}
+
+- (IBAction)rechangeAction:(id)sender {
+    RechangeParentViewController *detail = [[RechangeParentViewController alloc]init];
+    [self.navigationController pushViewController:detail animated:YES];
+}
 @end

@@ -15,12 +15,23 @@
 @interface ActivateCardViewController ()
 @property(nonatomic,strong)TableViewWithBlock *mTableV_name;
 @property(nonatomic,strong)MLTableAlert *alert;
+@property(nonatomic,strong)UIButton *rightBtn;
 @end
 IBInspectable
 @implementation ActivateCardViewController
-
+-(void)rightViewAction:(id)sender{
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.rightBtn setImage:[UIImage imageNamed:@"saomiao_icon"] forState:UIControlStateNormal];
+
+    [self.rightBtn addTarget:self action:@selector(rightViewAction:) forControlEvents:UIControlEventTouchUpInside];
+    self.rightBtn.frame = CGRectMake(0, 0, 32, 32);
+    self.simTF.rightView = self.rightBtn;
+    self.simTF.rightViewMode=UITextFieldViewModeAlways;
+    self.automaticallyAdjustsScrollViewInsets = NO;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"navigation_icon"] style:UIBarButtonItemStyleDone target:self action:@selector(leftItemAction:)];
 
 
@@ -42,7 +53,6 @@ IBInspectable
             cell.textLabel.font = [UIFont systemFontOfSize:13];
             cell.textLabel.textAlignment = NSTextAlignmentLeft;
         }
-        
         cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
         return cell;
     } setDidSelectRowBlock:^(UITableView *tableView,NSIndexPath *indexPath){
@@ -81,13 +91,14 @@ IBInspectable
                       UITableViewCell *cell = [anAlert.table dequeueReusableCellWithIdentifier:CellIdentifier];
                       if (cell == nil)
                           cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-                      
-                      cell.textLabel.text = @"123";
+                      cell.imageView.image = [UIImage imageNamed:@"setting_icon"];
+
+                      cell.textLabel.text = @"山东移动";
                       return cell;
                   }];
     self.alert.height = 500;
     [self.alert configureSelectionBlock:^(NSIndexPath *selectedIndex){
-        [self.operatorsBtn setTitle:@"123" forState:UIControlStateNormal];
+        [self.operatorsBtn setTitle:@"山东移动" forState:UIControlStateNormal];
         
     } andCompletionBlock:^{
         

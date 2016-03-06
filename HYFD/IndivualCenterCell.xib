@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -16,6 +17,9 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账户设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRA-oE-NVu">
                         <rect key="frame" x="70" y="0.0" width="130" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="oQh-T4-YK6"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -24,6 +28,13 @@
                         <rect key="frame" x="32" y="13" width="18" height="18"/>
                     </imageView>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="fRA-oE-NVu" secondAttribute="bottom" id="6Xg-Ru-PKZ"/>
+                    <constraint firstItem="fRA-oE-NVu" firstAttribute="leading" secondItem="ULf-9g-eDA" secondAttribute="trailing" constant="20" id="LvB-0f-Nj2"/>
+                    <constraint firstItem="fRA-oE-NVu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="VQK-lh-J96"/>
+                    <constraint firstItem="ULf-9g-eDA" firstAttribute="centerY" secondItem="fRA-oE-NVu" secondAttribute="centerY" id="cVT-jL-2mU"/>
+                    <constraint firstItem="ULf-9g-eDA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="24" id="eLL-ar-Z5p"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="leftImgV" destination="ULf-9g-eDA" id="Nny-uv-9P3"/>

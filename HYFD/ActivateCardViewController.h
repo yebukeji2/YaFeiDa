@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ActivateCardViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *simTF;
 @property (weak, nonatomic) IBOutlet UIButton *operatorsBtn;
 - (IBAction)operatorsBtnAction:(id)sender;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollview;

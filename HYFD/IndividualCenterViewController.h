@@ -10,5 +10,7 @@
 
 @interface IndividualCenterViewController : UIViewController<UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
+- (IBAction)checkAction:(id)sender;
+- (IBAction)rechangeAction:(id)sender;
 
 @end

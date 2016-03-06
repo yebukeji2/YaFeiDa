@@ -21,7 +21,7 @@
 {
     [super updateViewConstraints];
 
-    self.tableviewHeight.constant = self.cellNum*44;
+    self.tableviewHeight.constant = self.cellNum*35;
     
     
 }
@@ -45,11 +45,11 @@
         }
     }
     if(indexPath.row == self.cellNum-1){
-        [cell.addDeleteBtn setImage:[UIImage imageNamed:@"close_eye"] forState:UIControlStateNormal];
+        [cell.addDeleteBtn setImage:[UIImage imageNamed:@"addTel"] forState:UIControlStateNormal];
 
     }
     else{
-        [cell.addDeleteBtn setImage:[UIImage imageNamed:@"open_eye"] forState:UIControlStateNormal];
+        [cell.addDeleteBtn setImage:[UIImage imageNamed:@"close_icon"] forState:UIControlStateNormal];
     }
 //    if(self.datasource.count == 0){
 //        [self.datasource addObject:cell];
@@ -73,9 +73,12 @@
     [self updateViewConstraints];
     
 }
-
+-(void)rightItemAction:(id)sender{
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"time_icon"] style:UIBarButtonItemStyleDone target:self action:@selector(rightItemAction:)];
     self.cellNum = 1;
     self.datasource = [[NSMutableArray alloc]initWithCapacity:0];
     self.numArr = [NSArray arrayWithObjects:@"10",@"20",@"30",@"50",@"100",@"200",@"300",@"500", nil];
@@ -106,9 +109,16 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     RechargeCollectionViewCell *cell = (RechargeCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
-    cell.numLabel.backgroundColor = [UIColor redColor];
+    if([cell.imgV.image isEqual:[UIImage imageNamed:@"not_select_gray"]]){
+        cell.imgV.image = [UIImage imageNamed:@"select_yellow"];
+
+        
+    }
+    else{
+        
+    }
     int num =[[self.numArr objectAtIndex:indexPath.row]intValue];
-    int cutPrice = num*0.9;
+    int cutPrice = num*0.95;
     self.cutPriceTF.text = [NSString stringWithFormat:@"%d",cutPrice];
     self.actualPriceLabel.text = [self.numArr objectAtIndex:indexPath.row];
     
@@ -117,24 +127,31 @@
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     RechargeCollectionViewCell *cell = (RechargeCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
-    cell.numLabel.backgroundColor = [UIColor lightGrayColor];
-    
+    if([cell.imgV.image isEqual:[UIImage imageNamed:@"not_select_gray"]]){
+
+        
+        
+    }
+    else{
+        cell.imgV.image = [UIImage imageNamed:@"not_select_gray"];
+        
+    }
 }
 
 //每一个cell的大小
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake(100, 30);
+    return CGSizeMake(110, 32);
 }
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    return UIEdgeInsetsMake(0, 0, 0, 10);
+    return UIEdgeInsetsMake(0, 13, 0,13);
 }
 //cell的最小行间距
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section{
-    return 10;
+    return 20;
 }
 //cell的最小列间距
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
-    return 10;
+    return 0;
 }
 
 

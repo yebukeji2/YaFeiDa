@@ -15,4 +15,5 @@
 @property(nonatomic,strong)MoreRechangeViewController *child2;
 - (IBAction)segAction:(id)sender;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *seg;
+@property(assign,nonatomic)BOOL flag;
 @end

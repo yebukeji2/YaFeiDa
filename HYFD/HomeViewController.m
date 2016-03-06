@@ -15,6 +15,8 @@
 #import "MyViewController.h"
 #import "InviteViewController.h"
 #import "RechangeParentViewController.h"
+#import "ReplaceCardViewController.h"
+#import "CustomerViewController.h"
 
 @interface HomeViewController ()
 @property(nonatomic,strong) NSString *test;
@@ -68,14 +70,24 @@
     }
     else if(btn.tag==2){
         RechangeParentViewController *vc = [[RechangeParentViewController alloc]initWithNibName:@"RechangeParentViewController" bundle:nil];
-        //vc.Flag = 0;
+        vc.flag = 0;
+        vc.navigationItem.title = @"手机充值";
         //vc.navigationItem.titleView = self.seg;
         [self.navigationController pushViewController:vc animated:YES];
         
     }
+    else if(btn.tag==3){
+        CustomerViewController *detail = [[CustomerViewController alloc]init];
+        [self.navigationController pushViewController:detail animated:YES];
+//        detail.navigationItem.title = @"补卡";
+        
+        
+    }
     else if (btn.tag == 4){
-        RechangeViewController *vc = [[RechangeViewController alloc]initWithNibName:@"dataRechangeVC" bundle:nil];
-        vc.Flag = 1;
+        RechangeParentViewController *vc = [[RechangeParentViewController alloc]initWithNibName:@"RechangeParentViewController" bundle:nil];
+        vc.flag = 1;
+        vc.navigationItem.title = @"流量充值";
+//        RechangeViewController *vc = [[RechangeViewController alloc]initWithNibName:@"dataRechangeVC" bundle:nil];
         //vc.navigationItem.titleView = self.SecSeg;
         [self.navigationController pushViewController:vc animated:YES];
         

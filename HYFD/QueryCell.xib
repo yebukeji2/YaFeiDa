@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,26 +16,35 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2016-02-23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4R-ge-vMP">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-02-23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4R-ge-vMP">
                         <rect key="frame" x="15" y="4" width="80" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="C9y-gr-jcm"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15264122516" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htu-OF-kj8">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15264122516" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htu-OF-kj8">
                         <rect key="frame" x="114" y="4" width="98" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="开卡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vh-as-Lgj">
-                        <rect key="frame" x="220" y="4" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开卡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vh-as-Lgj">
+                        <rect key="frame" x="208" y="4" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="3TG-wE-PNT"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSd-Cm-wC0">
-                        <rect key="frame" x="285" y="4" width="21" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSd-Cm-wC0">
+                        <rect key="frame" x="265" y="4" width="21" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="21" id="Ghw-a6-Yky"/>
+                        </constraints>
                         <attributedString key="attributedText">
                             <fragment content="是">
                                 <attributes>
@@ -46,6 +57,21 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="5vh-as-Lgj" firstAttribute="bottom" secondItem="QSd-Cm-wC0" secondAttribute="bottom" id="2Tn-rr-wXh"/>
+                    <constraint firstItem="htu-OF-kj8" firstAttribute="baseline" secondItem="5vh-as-Lgj" secondAttribute="baseline" id="9Aw-3i-tLI"/>
+                    <constraint firstItem="htu-OF-kj8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="FZm-2f-SWh"/>
+                    <constraint firstItem="k4R-ge-vMP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-4" id="Ref-6Y-qZN"/>
+                    <constraint firstItem="5vh-as-Lgj" firstAttribute="firstBaseline" secondItem="htu-OF-kj8" secondAttribute="firstBaseline" id="VQf-ae-57c"/>
+                    <constraint firstItem="htu-OF-kj8" firstAttribute="firstBaseline" secondItem="k4R-ge-vMP" secondAttribute="firstBaseline" id="Ybj-ZC-SkE"/>
+                    <constraint firstItem="k4R-ge-vMP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="fBo-PX-ne9"/>
+                    <constraint firstItem="5vh-as-Lgj" firstAttribute="leading" secondItem="htu-OF-kj8" secondAttribute="trailing" constant="-4" id="hqJ-OO-f9I"/>
+                    <constraint firstItem="QSd-Cm-wC0" firstAttribute="leading" secondItem="5vh-as-Lgj" secondAttribute="trailing" constant="15" id="jDu-SJ-Hm0"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="QSd-Cm-wC0" secondAttribute="trailing" constant="26" id="kwK-P6-8p1"/>
+                    <constraint firstItem="QSd-Cm-wC0" firstAttribute="top" secondItem="5vh-as-Lgj" secondAttribute="top" id="lts-rG-19Z"/>
+                    <constraint firstItem="k4R-ge-vMP" firstAttribute="baseline" secondItem="htu-OF-kj8" secondAttribute="baseline" id="rge-Vn-ury"/>
+                    <constraint firstItem="htu-OF-kj8" firstAttribute="leading" secondItem="k4R-ge-vMP" secondAttribute="trailing" constant="19" id="uFG-VH-ML5"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="dateLabel" destination="k4R-ge-vMP" id="1u6-yN-Wcc"/>

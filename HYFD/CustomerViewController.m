@@ -1,43 +1,36 @@
 //
-//  RechangeParentViewController.m
+//  CustomerViewController.m
 //  HYFD
 //
-//  Created by songyanming on 16/3/4.
+//  Created by SongYanming on 16/3/6.
 //  Copyright © 2016年 SongYanming. All rights reserved.
 //
 
-#import "RechangeParentViewController.h"
+#import "CustomerViewController.h"
+#import "ReplaceCardViewController.h"
+#import "TransferViewController.h"
 
-@interface RechangeParentViewController ()
+@interface CustomerViewController ()
+@property(nonatomic,strong)ReplaceCardViewController *child1;
+@property(nonatomic,strong)TransferViewController *child2;
 
 @end
 
-@implementation RechangeParentViewController
+@implementation CustomerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //self.navigationItem.titleView = self.seg;
+    self.navigationItem.titleView = self.seg;
+    self.automaticallyAdjustsScrollViewInsets = NO;
 
-//    self.child1 = [[RechangeViewController alloc]init];
-//    [self addChildViewController:self.child1];
-//    [self.child1 didMoveToParentViewController:self];
-    if(self.flag == 0){
-        self.child2 = [[MoreRechangeViewController alloc]initWithNibName:@"MoreRechangeViewController" bundle:nil];
-        [self addChildViewController:self.child2];
-        [self.child2 didMoveToParentViewController:self];
-        [self addChild:self.child2 withChildToRemove:nil];
-    }
-    else
-    {
-        self.child2 = [[MoreRechangeViewController alloc]initWithNibName:@"MoreDataVC" bundle:nil];
-        [self addChildViewController:self.child2];
-        [self.child2 didMoveToParentViewController:self];
-        [self addChild:self.child2 withChildToRemove:nil];
-    }
-
-
+        self.child1 = [[ReplaceCardViewController alloc]init];
+        [self addChildViewController:self.child1];
+        [self.child1 didMoveToParentViewController:self];
     
-    // Do any additional setup after loading the view from its nib.
+    self.child2 = [[TransferViewController alloc]init];
+    [self addChildViewController:self.child2];
+    [self.child2 didMoveToParentViewController:self];
+    [self addChild:self.child1 withChildToRemove:nil];
 }
 - (void)addChild:(UIViewController *)childToAdd withChildToRemove:(UIViewController *)childToRemove
 {

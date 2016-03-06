@@ -5,30 +5,29 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RechangeParentViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomerViewController">
             <connections>
-                <outlet property="seg" destination="kN5-SO-UQx" id="cbs-Sw-D9B"/>
+                <outlet property="seg" destination="iHe-dy-BUb" id="4U2-fw-jTI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
-        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="kN5-SO-UQx">
+        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="iHe-dy-BUb">
             <rect key="frame" x="0.0" y="0.0" width="121" height="30"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <segments>
-                <segment title="单号直充"/>
-                <segment title="批号直充"/>
+                <segment title="补卡"/>
+                <segment title="过户"/>
             </segments>
             <connections>
-                <action selector="segAction:" destination="-1" eventType="valueChanged" id="r53-SF-Ye7"/>
+                <action selector="segAction:" destination="-1" eventType="valueChanged" id="GGb-qL-E2P"/>
             </connections>
-            <point key="canvasLocation" x="912.5" y="446"/>
+            <point key="canvasLocation" x="472.5" y="732"/>
         </segmentedControl>
     </objects>
 </document>

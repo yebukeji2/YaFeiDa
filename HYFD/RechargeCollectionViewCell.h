@@ -10,5 +10,6 @@
 
 @interface RechargeCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *numLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imgV;
 
 @end

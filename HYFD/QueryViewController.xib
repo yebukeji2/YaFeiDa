@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -139,23 +139,14 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="33"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5X-Xw-cJU">
-                    <rect key="frame" x="45" y="6" width="34" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="34" id="cQd-Gm-bxE"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrT-hr-OfO">
-                    <rect key="frame" x="144" y="6" width="51" height="21"/>
+                    <rect key="frame" x="175" y="6" width="51" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="操作" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CC9-jN-bRf">
-                    <rect key="frame" x="228" y="6" width="34" height="21"/>
+                    <rect key="frame" x="268" y="6" width="34" height="21"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="34" id="JaM-DS-380"/>
                     </constraints>
@@ -164,9 +155,18 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="状态" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWo-aB-14e">
-                    <rect key="frame" x="294" y="6" width="34" height="21"/>
+                    <rect key="frame" x="323" y="6" width="34" height="21"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="34" id="iFe-7f-RLS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5X-Xw-cJU">
+                    <rect key="frame" x="39" y="6" width="34" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="cQd-Gm-bxE"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -178,22 +178,22 @@
                 <constraint firstItem="CC9-jN-bRf" firstAttribute="baseline" secondItem="MWo-aB-14e" secondAttribute="baseline" id="5qs-Sk-gkk"/>
                 <constraint firstItem="YrT-hr-OfO" firstAttribute="firstBaseline" secondItem="CC9-jN-bRf" secondAttribute="firstBaseline" id="9c4-0y-KWS"/>
                 <constraint firstItem="U5X-Xw-cJU" firstAttribute="centerY" secondItem="2hW-px-rc3" secondAttribute="centerY" id="Bxs-j0-RNE"/>
-                <constraint firstItem="MWo-aB-14e" firstAttribute="trailing" secondItem="2hW-px-rc3" secondAttribute="trailingMargin" constant="-39" id="EJt-WL-fF4"/>
+                <constraint firstItem="MWo-aB-14e" firstAttribute="trailing" secondItem="2hW-px-rc3" secondAttribute="trailingMargin" constant="-10" id="EJt-WL-fF4"/>
                 <constraint firstItem="CC9-jN-bRf" firstAttribute="firstBaseline" secondItem="MWo-aB-14e" secondAttribute="firstBaseline" id="RZE-RB-qYI"/>
-                <constraint firstItem="MWo-aB-14e" firstAttribute="leading" secondItem="CC9-jN-bRf" secondAttribute="trailing" constant="32" id="SE5-nY-yVv"/>
+                <constraint firstItem="MWo-aB-14e" firstAttribute="leading" secondItem="CC9-jN-bRf" secondAttribute="trailing" constant="21" id="SE5-nY-yVv"/>
                 <constraint firstItem="U5X-Xw-cJU" firstAttribute="top" secondItem="2hW-px-rc3" secondAttribute="top" constant="6" id="WQn-Lw-ZcH"/>
                 <constraint firstItem="U5X-Xw-cJU" firstAttribute="firstBaseline" secondItem="YrT-hr-OfO" secondAttribute="firstBaseline" id="ZVr-Mi-KRA"/>
-                <constraint firstItem="YrT-hr-OfO" firstAttribute="leading" secondItem="U5X-Xw-cJU" secondAttribute="trailing" constant="65" id="dyz-oi-oMG"/>
-                <constraint firstItem="CC9-jN-bRf" firstAttribute="leading" secondItem="YrT-hr-OfO" secondAttribute="trailing" constant="33" id="g6a-BW-w1r"/>
+                <constraint firstItem="YrT-hr-OfO" firstAttribute="leading" secondItem="U5X-Xw-cJU" secondAttribute="trailing" constant="102" id="dyz-oi-oMG"/>
+                <constraint firstItem="CC9-jN-bRf" firstAttribute="leading" secondItem="YrT-hr-OfO" secondAttribute="trailing" constant="42" id="g6a-BW-w1r"/>
                 <constraint firstItem="CC9-jN-bRf" firstAttribute="baseline" secondItem="YrT-hr-OfO" secondAttribute="baseline" id="kU4-7t-GoK"/>
-                <constraint firstItem="U5X-Xw-cJU" firstAttribute="leading" secondItem="2hW-px-rc3" secondAttribute="leading" constant="45" id="qer-QU-ptO"/>
+                <constraint firstItem="U5X-Xw-cJU" firstAttribute="leading" secondItem="2hW-px-rc3" secondAttribute="leading" constant="39" id="qer-QU-ptO"/>
                 <constraint firstItem="YrT-hr-OfO" firstAttribute="baseline" secondItem="U5X-Xw-cJU" secondAttribute="baseline" id="vgP-bp-FeI"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="316" y="1988.5"/>
+            <point key="canvasLocation" x="210.5" y="1799.5"/>
         </view>
         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Ptm-od-Il9">
             <rect key="frame" x="0.0" y="0.0" width="121" height="30"/>
